@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Litrary Delights</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#">
+            <img src="img/logo 3.png" class="logo" alt="">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <img src="img/logo 5.png" class="logo" alt="">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/The murder of the roger/pg69087.cover.medium.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/The murder of the roger/pg69087.cover.medium.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/The murder of the roger/the-murder-of-roger.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <!--<div class="small-img-col">
+                    <img src="img/products/f7.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f8.jpg" width="100%" class="small-img" alt="">
+                </div>-->
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home/Books</h6>
+            <h4>The Murder of the Roger ACKROYD</h4>
+            <h6><strong>Author:</strong><span> Agatha Christie</span></h6>
+            <h2>₹349</h2>
+            <input type="number" value="1">
+            <a href="buy.html"><button>Buy Now</button></a>
+            <h4>Product Details</h4>
+            <span>Hercule Poirot has retired to the English village of King’s Abbot, determined to use his little grey cells in the growing of vegetable marrows. But when Roger Ackroyd, a local businessman and former acquaintance of Poirot’s, is murdered, the man’s niece begs Poirot to investigate in order to clear her fiancé. With Hastings having married and moved to Argentina, Poirot enlists the local doctor to be his assistant and scribe, and the two of them sift through clues to try to discern the ones that will lead them to the killer.
+
+                <br> Agatha Christie’s two previous Poirot novels had been generally well-received, but The Murder of Roger Ackroyd made her a household name. Consistently ranked among Christie’s best works, in 2013 it was voted as the best crime novel ever written by the 600-member Crime Writers’ Association of the United Kingdom.</span>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo 3.png" alt="">
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="sign-in.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="wishlist.html">My Wishlist</a>
+        </div>
+
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Phone:</strong> +91 9724253336</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00 . Mon - Sat</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
